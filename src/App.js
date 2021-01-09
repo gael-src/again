@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import About from "./components/About";
 import Home from "./components/Home";
 import Nav from "./components/Nav";
@@ -12,14 +12,14 @@ function App() {
 			<div className="App">
 				<Nav />
 				{/* <Switch> */}
-					{/* LAST ELEMENT BECAUSE OF / OR USE "EXACT" ATTRIBUTE */}
-					<Route path="/" exact component={Home} />
-					{/* <Home /> */}
-					<Route path="/shop" component={Shop} />
-					<Route path="/shop/socks" component={Socks} />
-					{/* <Shop /> */}
-					<Route path="/about" component={About} />
-					{/* <About /> */}
+				{/* LAST ELEMENT BECAUSE OF / OR USE "EXACT" ATTRIBUTE */}
+				<Route path="/" exact component={Home} />
+				{/* <Home /> */}
+				<Route path="/shop" component={Shop} />
+				<Route path="/shop/socks" component={Socks} />
+				{/* <Shop /> */}
+				<Route path="/about" component={About} />
+				{/* <About /> */}
 				{/* </Switch> */}
 			</div>
 		</Router>
